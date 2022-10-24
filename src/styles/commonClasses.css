@@ -12,3 +12,39 @@
 .cur-po{
     cursor: pointer;
 }
+
+.collection-title {
+    font-size: 30px;
+    color: var(--heading-text);
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.slick-prev::before {
+    color: #09529b !important;
+    content: "<";   
+    color: "red";
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: var(--primary-box-shadow);
+    border: 1px solid var(--border-white);
+    background-color: var(--primary-bg);
+}
+
+.slick-next::before {
+    color: #09529b !important;
+    box-shadow: var(--primary-box-shadow);
+    border: 1px solid var(--border-white);
+    background-color: var(--primary-bg);
+    content: ">";
+    color: "red";
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 50%;
+}
+.slick-slider {
+    display: flex;
+}
